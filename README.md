@@ -8,7 +8,6 @@
 
 <div align="center">
 
-[![docs](https://img.shields.io/badge/Docs-gray?style=plastic&logo=readthedocs&logoColor=white)](https://docs.usetusk.ai/automated-tests/self-serve)
 [![lint](https://github.com/Use-Tusk/test-runner/actions/workflows/linter.yml/badge.svg?branch=main&event=push)](https://github.com/Use-Tusk/test-runner/actions/workflows/linter.yml?query=branch%3Amain)
 [![build](https://github.com/Use-Tusk/test-runner/actions/workflows/codeql-analysis.yml/badge.svg?branch=main&event=push)](https://github.com/Use-Tusk/test-runner/actions/workflows/codeql-analysis.yml?query=branch%3Amain)
 [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fusetusk&style=flat&logo=x&label=Tusk&color=BF40BF)](https://x.com/usetusk)
