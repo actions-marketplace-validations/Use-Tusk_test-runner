@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://usetusk.ai">
-    <img src="./static/images/tusk.png" width="200" title="Tusk">
+    <img src="./static/images/tusk.png" width="200" title="Tusk" alt="Tusk">
   </a>
 </p>
 
@@ -15,16 +15,16 @@
 
 </div>
 
-Tusk is an AI testing platform that helps you catch blind spots, surface edge cases cases, and write verified tests for your commits.
+> [!NOTE]
+> For most users, we recommend following our [guide to set up your sandboxed test execution environment](https://docs.usetusk.ai/automated-tests/test-execution-environments).
+> If you have any questions, contact us at <support@usetusk.ai>.
 
-This GitHub Action facilitates running Tusk-generated tests on Github runners.
+Tusk is an AI testing platform that helps you catch blind spots, surface edge cases cases, and write verified tests for your commits. This GitHub Action facilitates running Tusk-generated tests on Github runners.
+
+New to Tusk? Check out our [main page](https://www.usetusk.ai/)
+or [docs](https://docs.usetusk.ai/automated-tests/overview).
 
 ## Usage
-
-Onboard to the Tusk platform:
-
-- Set your team up on Tusk [[docs](https://docs.usetusk.ai/automated-tests/onboarding)].
-- Configure and validate your test execution environment (including a workflow that uses this action) through the setup wizard [[docs](https://docs.usetusk.ai/automated-tests/self-serve)].
 
 When you push new commits, Tusk runs against your commit changes and generates tests. To ensure that test scenarios are meaningful and verified, Tusk will start this workflow and provision a runner (with a unique `runId`), using it as an ephemeral sandbox to run tests against your specific setup and dependencies. Essentially, this action polls for live commands emitted by Tusk based on the progress of the run, executes them, and sends the results back to Tusk for further processing.
 
@@ -170,7 +170,7 @@ For calculating test coverage gains, we support Pytest and Jest at the moment.
 
   Example:
 
-  ```
+  ```text
   npm run test {{testFilePaths}} -- --coverage --coverageReporters=json-summary --coverageDirectory=./coverage
   ```
 
@@ -259,4 +259,4 @@ You will also need to set the number of sandboxes to use in the Tusk app. Tusk w
 
 ## Contact
 
-Need help? Drop us an email at support@usetusk.ai.
+Need help? Drop us an email at <support@usetusk.ai>.
